@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Gmaakeup - Makeup Artist HTML Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="{% static 'image/x-icon"
+      href="img/favicon.ico' %}"
+    />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link
+      rel="stylesheet"
+      href="{% static 'lending/css/bootstrap.min.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'lending/css/animate.min.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'lending/css/magnific-popup.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'lending/fontawesome/css/all.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'lending/font-flaticon/flaticon.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'lending/css/dripicons.css' %}" />
+    <link rel="stylesheet" href="{% static 'lending/css/slick.css' %}" />
+    <link rel="stylesheet" href="{% static 'lending/css/meanmenu.css' %}" />
+    <link rel="stylesheet" href="{% static 'lending/css/default.css' %}" />
+    <link rel="stylesheet" href="{% static 'lending/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'lending/css/responsive.css' %}" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header-area">
+      <div id="header-sticky" class="menu-area">
+        <div class="container">
+          <div class="second-menu">
+            <div class="row align-items-center">
+              <div class="col-xl-2 col-lg-2">
+                <div class="logo">
+                  <a href="index.html"
+                    ><img src="img/logo/logo.png" alt="logo"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-xl-8 col-lg-8 text-center">
+                <div class="main-menu">
+                  <nav id="mobile-menu">
+                    <ul>
+                      <li class="has-sub">
+                        <a href="index.html">Home</a>
+                      </li>
+                      <li><a href="about.html">about me</a></li>
+                      <li class="has-sub">
+                        <a href="services.html">services</a>
+                      </li>
+                      <li><a href="portfolio.html">portfolio</a></li>
+                      <li class="has-sub">
+                        <a href="blog.html">news</a>
+                      </li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+
+              <div class="col-xl-2 col-lg-2 d-none d-lg-block">
+                <a href="index.html#contact" class="btn ss-btn smoth-scroll"
+                  >Get A Quote <i class="fal fa-long-arrow-right"></i
+                ></a>
+              </div>
+
+              <div class="col-12">
+                <div class="mobile-menu"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- main-area -->
+    <main>
+      <!-- search-popup -->
+      <div
+        class="modal fade bs-example-modal-lg search-bg popup1"
+        tabindex="-1"
+        role="dialog"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content search-popup">
+            <div class="text-center">
+              <a href="#" class="close2" data-dismiss="modal" aria-label="Close"
+                >× close</a
+              >
+            </div>
+            <div class="row search-outer">
+              <div class="col-md-11">
+                <input type="text" placeholder="Search for products..." />
+              </div>
+              <div class="col-md-1 text-right">
+                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /search-popup -->
+      {% block content %} {% endblock %}
+      <section class="newslater-area pt-95 pb-100" style="background: #cc866c">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-8 col-lg-8">
+              <div class="section-title">
+                <h2>Get Update By Signup Our Newsletter</h2>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4">
+              <form
+                name="ajax-form"
+                action="#"
+                method="post"
+                class="contact-form newslater p-relative"
+              >
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    id="email2"
+                    name="email"
+                    type="email"
+                    placeholder="Email Address..."
+                    value=""
+                    required=""
+                  />
+                  <button type="submit" class="btn btn-custom" id="send2">
+                    Join Now
+                  </button>
+                </div>
+                <!-- /Form-email -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- newslater-aread-end -->
+    </main>
+    <!-- main-area-end -->
+    <!-- footer -->
+    <footer class="footer-bg footer-p" style="background: #131819">
+      <div class="footer-top pt-70 pb-40">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-xl-3 col-lg-3 col-sm-6">
+              <div class="footer-widget mb-30">
+                <div class="f-widget-title">
+                  <img src="img/logo/logo.png" alt="img" />
+                </div>
+                <p>
+                  Nam purus nibh, luctus at cursus vel, efficitur eu dui. Aenean
+                  tellus massa, euismod eu dictum in, tincidunt ac lacus.
+                  Quisque vitae tellus a nibh sollicitudin viverra id sed
+                  libero.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-sm-6">
+              <div class="footer-widget mb-30">
+                <div class="f-widget-title">
+                  <h2>Our Links</h2>
+                </div>
+                <div class="footer-link">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html"> About Us</a></li>
+                    <li><a href="services.html"> Services </a></li>
+                    <li><a href="contact.html"> Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-sm-6">
+              <div class="footer-widget mb-30">
+                <div class="f-widget-title">
+                  <h2>Our Services</h2>
+                </div>
+                <div class="footer-link">
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privercy</a></li>
+                    <li><a href="#">Term & Conditions</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-sm-6">
+              <div class="footer-widget mb-30">
+                <div class="f-widget-title">
+                  <h2>Our Services</h2>
+                </div>
+                <div class="f-contact">
+                  <ul>
+                    <li>
+                      <i class="icon fal fa-phone"></i>
+                      <span>1800-121-3637<br />+91-7052-101-786</span>
+                    </li>
+                    <li>
+                      <i class="icon fal fa-envelope"></i>
+                      <span>
+                        <a href="mailto:info@example.com">info@example.com</a>
+                        <br />
+                        <a href="mailto:help@example.com">help@example.com</a>
+                      </span>
+                    </li>
+                    <li>
+                      <i class="icon fal fa-map-marker-check"></i>
+                      <span
+                        >1247/Plot No. 39,<br />
+                        LHB Colony, Kanpur</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-sm-6">
+              <div class="footer-widget mb-30">
+                <div class="f-widget-title mb-30">
+                  <h2>Subscribe To Our Newsletter</h2>
+                </div>
+                <div class="footer-link">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212867.83634504632!2d-112.24455686962897!3d33.52582710700138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b743829374b03%3A0xabaac255b1e43fbe!2sPlexus%20Worldwide!5e0!3m2!1sen!2sin!4v1618567685329!5m2!1sen!2sin"
+                    width="100"
+                    height="160"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-wrap">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              Copyright © 2021 Zcubedesign. All rights reserved.
+            </div>
+            <div class="col-lg-6 text-right text-xl-right">
+              <ul>
+                <li><a href="#">Privercy</a></li>
+                <li><a href="#">Term &amp; Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer-end -->
+    <!-- JS here -->
+    <script src="{% static 'lending/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'lending/js/vendor/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'lending/js/popper.min.js' %}"></script>
+    <script src="{% static 'lending/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'lending/js/one-page-nav-min.js' %}"></script>
+    <script src="{% static 'lending/js/slick.min.js' %}"></script>
+    <script src="{% static 'lending/js/ajax-form.js' %}"></script>
+    <script src="{% static 'lending/js/paroller.js' %}"></script>
+    <script src="{% static 'lending/js/wow.min.js' %}"></script>
+    <script src="{% static 'lending/js/js_isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'lending/js/imagesloaded.min.js' %}"></script>
+    <script src="{% static 'lending/js/parallax.min.js' %}"></script>
+    <script src="{% static 'lending/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'lending/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'lending/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'lending/js/jquery.meanmenu.min.js' %}"></script>
+    <script src="{% static 'lending/js/parallax-scroll.js' %}"></script>
+    <script src="{% static 'lending/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'lending/js/element-in-view.js' %}"></script>
+    <script src="{% static 'lending/js/main.js' %}"></script>
+  </body>
+</html>
