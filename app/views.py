@@ -29,6 +29,6 @@ def contact_page(request):
         phone = request.POST["phone"]
         comment = request.POST["comment"]
         models.Contact.objects.create(
-            email=email, full_name=first_name, phone=phone, comment=comment
+            email=email, first_name=first_name, phone=phone, comment=comment
         )
     return render(request, "lending/contact.html", context)

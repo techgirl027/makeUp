@@ -80,7 +80,12 @@
             <h2>Biz bilan bog'lanish</h2>
           </div>
 
-          <form action="" method="post" class="contact-form mt-30">
+          <form
+            action="{% url 'contact_page' %}"
+            method="post"
+            class="contact-form mt-30"
+          >
+            {% csrf_token %}
             <div class="row">
               <div class="col-lg-12">
                 <div class="contact-field p-relative c-name mb-20">
