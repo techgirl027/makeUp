@@ -22,7 +22,7 @@
                 data-animation="fadeInUp"
                 data-delay=".4s"
               >
-                <a href="#about" class="btn ss-btn active mr-15 smoth-scroll"
+                <a href="#" class="btn ss-btn active mr-15 smoth-scroll"
                   >Ko'proq bilish <i class="fal fa-long-arrow-right"></i
                 ></a>
                 <a
@@ -69,7 +69,7 @@
             </div>
           </div>
           <div class="slider-btn mt-20">
-            <a href="about.html" class="btn ss-btn smoth-scroll"
+            <a href="#" class="btn ss-btn smoth-scroll"
               >Ko'proq bilish <i class="fal fa-long-arrow-right"></i
             ></a>
           </div>
@@ -109,7 +109,7 @@
             <img src="{{service.img.url}}" alt="img" />
           </div>
           <div class="second-services-content">
-            <h3><a href="services-detail.html">{{service.title}}</a></h3>
+            <h3><a href="#">{{service.title}}</a></h3>
             <p>{{service.text}}</p>
           </div>
         </div>
@@ -177,18 +177,16 @@
     <div class="row align-items-center">
       <div class="col-lg-12">
         <div class="section-title center-align mb-50 text-center">
-          <h5>Read</h5>
-          <h2>Latest News</h2>
+          <h2>Yangiliklar!</h2>
         </div>
       </div>
     </div>
     <div class="row">
+      {% for new in news %}
       <div class="col-lg-4 col-md-4">
         <div class="single-post2 mb-30 wow fadeInDown animated">
           <div class="blog-thumb2">
-            <a href="blog-details.html"
-              ><img src="img/blog/inner_b1.jpg" alt="img"
-            /></a>
+            ><img src="{{new.img.url}}" alt="img" />
           </div>
           <div class="blog-content2">
             <div class="b-meta">
@@ -196,9 +194,11 @@
                 <div class="col-lg-12 col-md-12">
                   <div class="meta-info">
                     <ul>
-                      <li><i class="fal fa-user"></i> Admin</li>
                       <li>
-                        <i class="fal fa-calendar-alt"></i> 24th March 2021
+                        <i class="fal fa-user"></i> {{new.user.full_name}}
+                      </li>
+                      <li>
+                        <i class="fal fa-calendar-alt"></i> {{new.created_at}}
                       </li>
                     </ul>
                   </div>
@@ -209,124 +209,22 @@
             <div class="row">
               <div class="col-lg-12">
                 <h4>
-                  <a href="blog-details.html"
-                    >Fusce suscipit arcu velit id scelerisque tempus est</a
-                  >
+                  <p>{{new.title}}</p>
                 </h4>
-                <p>
-                  Cras ultrices maximus arcu ut aqam. Aliquam daber a diam ante.
-                </p>
               </div>
             </div>
 
             <div class="row align-items-center">
               <div class="col-lg-12 col-md-12">
                 <div class="blog-btn">
-                  <a href="blog-details.html"
-                    ><i class="fas fa-angle-right"></i> Read More</a
-                  >
+                  <a href="#"><i class="fas fa-angle-right"></i> Read More</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-4">
-        <div class="single-post2 mb-30 wow fadeInUp animated">
-          <div class="blog-thumb2">
-            <a href="blog-details.html"
-              ><img src="img/blog/inner_b2.jpg" alt="img"
-            /></a>
-          </div>
-          <div class="blog-content2">
-            <div class="b-meta">
-              <div class="row">
-                <div class="col-lg-12 col-md-12">
-                  <div class="meta-info">
-                    <ul>
-                      <li><i class="fal fa-user"></i> Admin</li>
-                      <li>
-                        <i class="fal fa-calendar-alt"></i> 24th March 2021
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-12">
-                <h4>
-                  <a href="blog-details.html"
-                    >Fusce suscipit arcu velit id scelerisque tempus est</a
-                  >
-                </h4>
-                <p>
-                  Cras ultrices maximus arcu ut aqam. Aliquam daber a diam ante.
-                </p>
-              </div>
-            </div>
-
-            <div class="row align-items-center">
-              <div class="col-lg-12 col-md-12">
-                <div class="blog-btn">
-                  <a href="blog-details.html"
-                    ><i class="fas fa-angle-right"></i> Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4">
-        <div class="single-post2 mb-30 wow fadeInDown animated">
-          <div class="blog-thumb2">
-            <a href="blog-details.html"
-              ><img src="img/blog/inner_b3.jpg" alt="img"
-            /></a>
-          </div>
-          <div class="blog-content2">
-            <div class="b-meta">
-              <div class="row">
-                <div class="col-lg-12 col-md-12">
-                  <div class="meta-info">
-                    <ul>
-                      <li><i class="fal fa-user"></i> Admin</li>
-                      <li>
-                        <i class="fal fa-calendar-alt"></i> 24th March 2021
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-12">
-                <h4>
-                  <a href="blog-details.html"
-                    >Fusce suscipit arcu velit id scelerisque tempus est</a
-                  >
-                </h4>
-                <p>
-                  Cras ultrices maximus arcu ut aqam. Aliquam daber a diam ante.
-                </p>
-              </div>
-            </div>
-
-            <div class="row align-items-center">
-              <div class="col-lg-12 col-md-12">
-                <div class="blog-btn">
-                  <a href="blog-details.html"
-                    ><i class="fas fa-angle-right"></i> Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
