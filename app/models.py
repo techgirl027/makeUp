@@ -45,6 +45,7 @@ class Contact(models.Model):
     email = models.EmailField()
     phone = models.CharField(max_length=255)
     comment = models.TextField()
+    # is_show = models.BooleanField()
 
     def __str__(self) -> str:
         return self.first_name
